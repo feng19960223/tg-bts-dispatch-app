@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3382DD</color>
+    <color name="colorPrimaryDark">#3382DD</color>
+    <color name="colorAccent">#FF8E01</color>
+
+    <color name="color1">#ffffff</color>
+    <color name="color2">#909090</color>
+    <color name="color3">#1373ef</color>
+
+    <color name="mainColor">#3382DD</color>
+    <color name="mainBg">#EDEFF4</color>
+
+    <color name="main">#637282</color>
+    <color name="sub">#A5B3BE</color>
+
+    <!--分割线-->
+    <color name="line">#FFACABAB</color>
+
+    <color name="c1">#FF4E4E4E</color>
+    <color name="c2">#FF2183D3</color>
+    <color name="c3">#FF615F5F</color>
+    <color name="c4">#FF8B8989</color>
+    <color name="c5">#FF188AE2</color>
+    <color name="fun_tv_blue">#FF188AE2</color>
+    <color name="fun_tv_black">#FF424242</color>
+    <color name="fun_ll">#FFEDF0F5</color>
+</resources>

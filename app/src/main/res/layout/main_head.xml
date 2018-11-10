@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_36"
+    android:layout_marginEnd="@dimen/dp_8"
+    android:layout_marginStart="@dimen/dp_8"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_40"
+        android:paddingEnd="@dimen/dp_12"
+        android:paddingStart="@dimen/dp_12"
+        android:src="@drawable/tg_common_ic_add_black_24dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--前一天-->
+        <ImageView
+            android:id="@+id/iv_main_head_before"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="match_parent"
+            android:paddingEnd="@dimen/dp_6"
+            android:paddingStart="@dimen/dp_6"
+            android:src="@drawable/ic_left" />
+
+        <!--日期-->
+        <TextView
+            android:id="@+id/tv_main_head_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dp_28"
+            android:paddingStart="@dimen/dp_28" />
+
+        <!--后一天-->
+        <ImageView
+            android:id="@+id/iv_main_head_next"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="match_parent"
+            android:paddingEnd="@dimen/dp_6"
+            android:paddingStart="@dimen/dp_6"
+            android:src="@drawable/ic__right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_head_whiteornight"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:background="@drawable/bg_main_head_switch"
+        android:orientation="horizontal">
+
+        <!--白班-->
+        <TextView
+            android:id="@+id/tv_main_head_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_main_head_switch_bule"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dp_12"
+            android:paddingStart="@dimen/dp_12"
+            android:text="白班"
+            android:textColor="#FFFFFF" />
+
+        <!--夜班-->
+        <TextView
+            android:id="@+id/tv_main_head_night"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dp_12"
+            android:paddingStart="@dimen/dp_12"
+            android:text="夜班"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_head_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_main_head_search"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_main_head_et"
+            android:drawableStart="@drawable/ic_search"
+            android:hint="车组"
+            android:padding="@dimen/dp_5"
+            android:singleLine="true"
+            android:textColorHint="#FFA6A6A6" />
+    </LinearLayout>
+</FrameLayout>

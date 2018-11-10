@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?><!--故障派工-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_activity" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--检修股道/检修任务/开始时间-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--检修股道-->
+                    <TextView
+                        android:id="@+id/tvDiscoveryTime"
+                        style="@style/tv_style_7" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="#EDEFF4"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dp_50"
+                            android:gravity="center_vertical"
+                            android:text="质检人员："
+                            android:textColor="@color/c1" />
+
+                        <!--质检人员姓名-->
+                        <TextView
+                            android:id="@+id/tvQcRealname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/tv_bottom_bg"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="@dimen/dp_8"
+                            android:paddingStart="@dimen/dp_8"
+                            android:text="点击选择" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <!--开始时间-->
+                    <TextView
+                        android:id="@+id/tvTrainSetCodeNum"
+                        style="@style/tv_style_7" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <!--系统分类-->
+                    <TextView
+                        android:id="@+id/tvSystemType"
+                        style="@style/tv_style_7"
+                        android:background="#EDEFF4" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dp_50"
+                            android:gravity="center_vertical"
+                            android:text="计划开始："
+                            android:textColor="@color/c1" />
+
+                        <TextView
+                            android:id="@+id/tvDispatchPlanStartTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/tv_bottom_bg"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <!--检修班组/派工详情/结束时间-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--作业项目-->
+                    <TextView
+                        android:id="@+id/tvSource"
+                        style="@style/tv_style_7" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="#EDEFF4"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dp_50"
+                            android:gravity="center_vertical"
+                            android:text="维修人员："
+                            android:textColor="@color/c1" />
+
+                        <!--维修人员姓名-->
+                        <TextView
+                            android:id="@+id/tvhandlerRealname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/tv_bottom_bg"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="@dimen/dp_8"
+                            android:paddingStart="@dimen/dp_8"
+                            android:text="点击选择" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <!--结束时间-->
+                    <TextView
+                        android:id="@+id/tvCarriage"
+                        style="@style/tv_style_7" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <!--故障模式-->
+                    <TextView
+                        android:id="@+id/tvPattern"
+                        style="@style/tv_style_7"
+                        android:background="#EDEFF4" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dp_50"
+                            android:gravity="center_vertical"
+                            android:text="计划结束："
+                            android:textColor="@color/c1" />
+
+                        <TextView
+                            android:id="@+id/tvDispatchPlanFinishTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/tv_bottom_bg"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--问题描述-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_50"
+                        android:text="问题描述："
+                        android:textColor="@color/c1" />
+
+                    <TextView
+                        android:id="@+id/tvDiscoveryDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_60"
+                        android:textColor="@color/c1" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_8" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_fault_report_yes"
+        style="@style/tv_style_10"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="确定派工" />
+</LinearLayout>

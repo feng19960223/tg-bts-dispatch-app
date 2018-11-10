@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3382DD"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingStart="@dimen/dp_20">
+
+        <!--返回按钮-->
+        <ImageView
+            android:id="@+id/iv_black"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_left_white" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/dp_16">
+
+            <!--入库时间-->
+            <TextView
+                android:id="@+id/tvTrainSetModelAndTrainSetLengthType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFF"
+                android:textSize="@dimen/sp_12" />
+
+            <!--车组-->
+            <TextView
+                android:id="@+id/tvArriveTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <!--序号-->
+        <TextView
+            android:id="@+id/tv_title_num"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:background="@drawable/bg_dialog_head_number_blue_cambridge"
+            android:gravity="center"
+            android:textColor="#3382DD"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone" />
+
+        <!--删除-->
+        <ImageView
+            android:id="@+id/iv_title_delete"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_6"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FFF"
+        android:textSize="@dimen/sp_14" />
+</FrameLayout>

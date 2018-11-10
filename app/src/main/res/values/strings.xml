@@ -1,0 +1,64 @@
+<resources>
+    <!--*********************** base *****************************-->
+    <!--空白-->
+    <string name="common_blank"></string>
+    <!--测试-->
+    <string name="common_test">测试</string>
+    <!--软件名称-->
+    <string name="app_name">作业派工</string>
+    <!--软件 titel-->
+    <string name="app_title">作业派工系统</string>
+    <!--联系信息-->
+    <string name="contract_name">北京铁道工程机电技术研究所股份有限公司</string>
+    <!--联系邮箱-->
+    <string name="contract_email"></string>
+    <!-- 联系网址-->
+    <string name="contract_website">www.bjtds.com.cn</string>
+    <!-- 联系电话-->
+    <string name="contract_phone">010&#8211;51852819</string>
+    <!-- 联系地址-->
+    <string name="contract_address">北京中关村科技园总部基地</string>
+    <!-- 再按一次退出程序-->
+    <string name="dbclick_exit">再按一次退出程序</string>
+    <!-- 登录信息过去-->
+    <string name="token_expired">登录信息已过期，请重新登录！</string>
+    <!--*********************** title *****************************-->
+    <!-- title 关于-->
+    <string name="title_about">关于系统</string>
+    <!-- title 帮助-->
+    <string name="title_help">系统帮助</string>
+    <!-- title 用户信息-->
+    <string name="title_self_info">用户信息</string>
+    <!--*********************** label *****************************-->
+    <!-- label 姓名-->
+    <string name="label_realname">姓名</string>
+    <!-- label 手机-->
+    <string name="label_cellphone">手机</string>
+    <!-- label email-->
+    <string name="label_email">邮箱</string>
+    <!-- label 修改密码-->
+    <string name="label_chanage_pass">修改密码</string>
+    <!-- label 登录-->
+    <string name="label_login">登  录</string>
+    <!-- label 确认-->
+    <string name="label_confirm">确  认</string>
+    <!-- label 确认-->
+    <string name="label_submit">提  交</string>
+    <!-- label 注销登录-->
+    <string name="label_logout">注销登录</string>
+    <!-- label IP-->
+    <string name="label_ip">IP</string>
+    <!-- label 端口-->
+    <string name="label_port">端口</string>
+    <!--*********************** hint *****************************-->
+    <!-- hint 请输入账号-->
+    <string name="hint_input_username">请输入账号</string>
+    <!-- hint 请输入密码-->
+    <string name="hint_input_password">请输入密码</string>
+    <!-- hint 请输入ip地址-->
+    <string name="hint_input_ip">请输入服务器IP地址</string>
+    <!-- hint 请输入服务器端口-->
+    <string name="hint_input_port">请输入服务器端口</string>
+</resources>
+
+

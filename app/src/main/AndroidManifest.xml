@@ -1,0 +1,97 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.turingoal.bts.dispatch">
+    <!-- 访问权限-访问网络连接 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问权限-获取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问权限-WIFI状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 访问权限-WIFI变化 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问权限-震动
+    <uses-permission android:name="android.permission.VIBRATE" />-->
+    <!-- 访问权限-读取设备外部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 访问权限-写入设备外部存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问权限-摄像头
+    <uses-permission android:name="android.permission.CAMERA" />-->
+    <!-- 访问权限-闪光灯
+    <uses-permission android:name="android.permission.FLASHLIGHT" />-->
+    <!-- 访问权限-设备信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问权限-拨打电话
+    <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <!-- application配置 -->
+    <application
+        android:name=".app.TgApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <!-- 应用启动页 -->
+        <activity
+            android:name=".ui.activity.common.WelcomeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/StartAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 首页 -->
+        <activity
+            android:name=".ui.activity.common.MainActivity"
+            android:screenOrientation="landscape" />
+        <!-- 登陆页 -->
+        <activity
+            android:name=".ui.activity.common.LoginActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/StartAppTheme" />
+        <!-- 登陆配置服务器界面 -->
+        <activity
+            android:name=".ui.activity.common.LoginSettingActivity"
+            android:screenOrientation="landscape" />
+        <!--视频查看-->
+        <activity
+            android:name=".ui.activity.common.TgVideoPlayerActivity"
+            android:screenOrientation="landscape" />
+        <!--照片查看-->
+        <activity
+            android:name=".ui.activity.common.TgPhotoActivity"
+            android:screenOrientation="landscape" />
+        <!--总单详情页面-->
+        <activity
+            android:name=".ui.activity.SchedulingOrderDetailActivity"
+            android:screenOrientation="landscape" />
+        <!--新建任务-->
+        <activity
+            android:name=".ui.activity.SchedulingTaskAddActivity"
+            android:screenOrientation="landscape" />
+        <!--派工页面-->
+        <activity
+            android:name=".ui.activity.DispatchActivity"
+            android:screenOrientation="landscape" />
+        <!--派工详情-->
+        <activity
+            android:name=".ui.activity.DispatchDetailActivity"
+            android:screenOrientation="landscape" />
+        <!--故障列表-->
+        <activity
+            android:name=".ui.activity.BreakdownRecordActivity"
+            android:screenOrientation="landscape" />
+        <!--故障详情-->
+        <activity
+            android:name=".ui.activity.BreakdownRecordDetailActivity"
+            android:screenOrientation="landscape" />
+        <!--故障派工-->
+        <activity
+            android:name=".ui.activity.BreakdownRecordDispatchActivity"
+            android:screenOrientation="landscape" />
+    </application>
+</manifest>

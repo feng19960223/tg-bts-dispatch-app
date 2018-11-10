@@ -1,0 +1,270 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7230507206248972792",
+      "lastPropertyId": "5:4782508269364687546",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:5454825251652007645",
+          "name": "entityId"
+        },
+        {
+          "id": "2:7362105377336355979",
+          "name": "id"
+        },
+        {
+          "id": "3:7279969894238793045",
+          "name": "username"
+        },
+        {
+          "id": "4:4287346193253100176",
+          "name": "realname"
+        },
+        {
+          "id": "5:4782508269364687546",
+          "name": "workGroupName"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:4730459846409270816",
+      "lastPropertyId": "9:6695040455347822980",
+      "name": "MaintenanceTaskDb",
+      "properties": [
+        {
+          "id": "1:3314581755696350909",
+          "name": "entityId"
+        },
+        {
+          "id": "2:3862682606462706546",
+          "name": "id"
+        },
+        {
+          "id": "3:7078578579884398830",
+          "name": "codeNum"
+        },
+        {
+          "id": "4:6450503177703946710",
+          "name": "title"
+        },
+        {
+          "id": "5:402776456706940482",
+          "name": "trainSetType"
+        },
+        {
+          "id": "6:3942253468626150879",
+          "name": "maintenanceLevelCodeNum"
+        },
+        {
+          "id": "7:5332506818472943162",
+          "name": "description"
+        },
+        {
+          "id": "8:4648913619774453342",
+          "name": "sortOrder"
+        },
+        {
+          "id": "9:6695040455347822980",
+          "name": "enabled"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:5818861941204685425",
+      "lastPropertyId": "10:2303128387659754750",
+      "name": "MaintenanceWorkItemDb",
+      "properties": [
+        {
+          "id": "1:7986234258137410869",
+          "name": "entityId"
+        },
+        {
+          "id": "2:1049582875208420235",
+          "name": "id"
+        },
+        {
+          "id": "3:7293989264178527374",
+          "name": "codeNum"
+        },
+        {
+          "id": "4:7571624834366084332",
+          "name": "title"
+        },
+        {
+          "id": "5:3282400428789692762",
+          "name": "trainSetType"
+        },
+        {
+          "id": "6:2314829228641035043",
+          "name": "maintenanceLevelCodeNum"
+        },
+        {
+          "id": "7:447708862823930153",
+          "name": "description"
+        },
+        {
+          "id": "8:5314406661106865128",
+          "name": "sortOrder"
+        },
+        {
+          "id": "9:8050876186167226925",
+          "name": "enabled"
+        },
+        {
+          "id": "10:2303128387659754750",
+          "name": "teamsType"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:1906553606762940740",
+      "lastPropertyId": "18:6409195606240010327",
+      "name": "TrackDb",
+      "properties": [
+        {
+          "id": "1:4081631592330746282",
+          "name": "entityId"
+        },
+        {
+          "id": "2:90268747836417291",
+          "name": "id"
+        },
+        {
+          "id": "3:6209277099436367516",
+          "name": "codeNum"
+        },
+        {
+          "id": "4:964083899099575326",
+          "name": "workType"
+        },
+        {
+          "id": "5:4166342049987738573",
+          "name": "outType"
+        },
+        {
+          "id": "6:4051039377871624608",
+          "name": "lengthType"
+        },
+        {
+          "id": "7:6532723089117349182",
+          "name": "statusRow1"
+        },
+        {
+          "id": "8:805652903623682791",
+          "name": "statusRow2"
+        },
+        {
+          "id": "9:8560241069854635910",
+          "name": "trainSetCodeNumRow1"
+        },
+        {
+          "id": "10:161941098620719343",
+          "name": "trainSetCodeNumRow2"
+        },
+        {
+          "id": "11:6000820198101413243",
+          "name": "arriveTimeRow1"
+        },
+        {
+          "id": "12:1397605742032358915",
+          "name": "arriveTimeRow2"
+        },
+        {
+          "id": "13:6343261690976971572",
+          "name": "outboundTimeRow1"
+        },
+        {
+          "id": "14:3068828819283025794",
+          "name": "outboundTimeRow2"
+        },
+        {
+          "id": "15:5043512254528438427",
+          "name": "trainSetLengthTypeRow2"
+        },
+        {
+          "id": "16:7704625299424335261",
+          "name": "description"
+        },
+        {
+          "id": "17:1119146533316112529",
+          "name": "sortOrder"
+        },
+        {
+          "id": "18:6409195606240010327",
+          "name": "enabled"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:3001407656953470558",
+      "lastPropertyId": "11:6704715385192646395",
+      "name": "TrainSetDb",
+      "properties": [
+        {
+          "id": "1:5611996957989711379",
+          "name": "entityId"
+        },
+        {
+          "id": "2:289790081743381911",
+          "name": "id"
+        },
+        {
+          "id": "3:8402490885493452491",
+          "name": "codeNum"
+        },
+        {
+          "id": "4:6273395388045582836",
+          "name": "trainSetType"
+        },
+        {
+          "id": "5:3108202390402244847",
+          "name": "trainSetModel"
+        },
+        {
+          "id": "6:2755028583507108579",
+          "name": "trainSetLengthType"
+        },
+        {
+          "id": "7:4330009391540186120",
+          "name": "trainSetStaffType"
+        },
+        {
+          "id": "8:2360030469983643851",
+          "name": "productionDate"
+        },
+        {
+          "id": "9:6660084489338219825",
+          "name": "description"
+        },
+        {
+          "id": "10:3485464165343834713",
+          "name": "sortOrder"
+        },
+        {
+          "id": "11:6704715385192646395",
+          "name": "enabled"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:3001407656953470558",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

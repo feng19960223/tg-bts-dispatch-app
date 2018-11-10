@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--股道列位-->
+    <string-array name="TrackRowNum">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
